@@ -345,6 +345,65 @@ nav{
   .invest-price{font-size:56px}
 }
 
+/* ── BENEFITS ── */
+.benefits-banner{
+  background:var(--ink);padding:5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.benefits-headline{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(30px,4.5vw,52px);font-weight:300;
+  color:rgba(255,255,255,0.92);line-height:1.2;
+  text-align:center;margin-bottom:1rem;
+}
+.benefits-headline em{font-style:italic;color:var(--burg)}
+.benefits-sub{
+  font-size:20px;color:rgba(255,255,255,0.50);font-weight:300;
+  text-align:center;max-width:700px;margin:0 auto 3.5rem;line-height:1.7;
+}
+.benefits-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.06);
+}
+.benefit-col{background:var(--ink);padding:2.5rem 2rem}
+.benefit-col-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;font-weight:600;color:var(--burg);
+  margin-bottom:0.5rem;
+}
+.benefit-col-sub{
+  font-size:15px;color:rgba(255,255,255,0.40);letter-spacing:0.1em;
+  text-transform:uppercase;margin-bottom:1.75rem;
+  padding-bottom:1rem;border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.benefit-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.25rem}
+.benefit-items li{
+  font-size:19px;color:rgba(255,255,255,0.72);font-weight:300;line-height:1.6;
+  padding-left:1.25rem;position:relative;
+}
+.benefit-items li::before{
+  content:'';position:absolute;left:0;top:10px;
+  width:6px;height:6px;border-radius:50%;background:var(--burg);
+}
+.benefit-items li strong{color:rgba(255,255,255,0.90);font-weight:500}
+.benefits-bottom{
+  text-align:center;margin-top:3.5rem;
+  padding-top:2.5rem;border-top:1px solid rgba(255,255,255,0.06);
+}
+.benefits-bottom p{
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;font-size:26px;
+  color:rgba(255,255,255,0.80);font-weight:300;
+  line-height:1.5;max-width:750px;margin:0 auto;
+}
+@media(max-width:900px){
+  .benefits-grid{grid-template-columns:1fr}
+  .benefit-col{padding:2.25rem 2rem}
+  .benefits-headline{font-size:clamp(26px,7vw,44px)}
+  .benefits-sub{font-size:18px}
+  .benefits-bottom p{font-size:22px}
+}
+
 /* ── FAQ ── */
 .faq-list{display:flex;flex-direction:column;gap:0;margin:2.5rem 0}
 .faq-item{border:1px solid var(--rule);border-bottom:none;overflow:hidden}
@@ -480,6 +539,7 @@ footer{
     <li><a href="#ecosystem">The Ecosystem</a></li>
     <li><a href="#pillars">Three Pillars</a></li>
     <li><a href="#roadmap">Step by Step</a></li>
+    <li><a href="#benefits">Benefits</a></li>
     <li><a href="#why">Why SOMM DIGI</a></li>
     <li><a href="#investment">Investment</a></li>
     <li><a href="#faq">FAQ</a></li>
@@ -706,6 +766,56 @@ footer{
         </div>
       </div>
 
+    </div>
+  </div>
+</div>
+
+<!-- BENEFITS — THE FULL PICTURE -->
+<div class="benefits-banner reveal" id="benefits">
+  <div class="wrap">
+    <p class="benefits-headline">The Ecosystem Produces <em>Everything</em></p>
+    <p class="benefits-sub">SOMM DIGI builds the ecosystem. The ecosystem powers the AI. The AI produces consistent, high-quality content for every pillar &mdash; automatically, at scale, in the voice of CMS Europe.</p>
+    <div class="benefits-grid stagger">
+
+      <div class="benefit-col">
+        <p class="benefit-col-title">Candidates</p>
+        <p class="benefit-col-sub">Pillar I</p>
+        <ul class="benefit-items">
+          <li><strong>Career Portal</strong> &mdash; Professional profiles, job matching, global opportunities</li>
+          <li><strong>Magazine &amp; Newsletter</strong> &mdash; Quarterly content featuring candidate stories, industry insights</li>
+          <li><strong>Community</strong> &mdash; Lifelong networking under the CMS Europe name</li>
+          <li><strong>AI Study Support</strong> &mdash; Exam preparation tools built on CMS Europe curriculum</li>
+          <li><strong>Social Media</strong> &mdash; Engaging content candidates share, expanding reach organically</li>
+        </ul>
+      </div>
+
+      <div class="benefit-col">
+        <p class="benefit-col-title">Partners</p>
+        <p class="benefit-col-sub">Pillar II</p>
+        <ul class="benefit-items">
+          <li><strong>Partner Directory</strong> &mdash; Global visibility for every CMS Europe school</li>
+          <li><strong>Marketing Content</strong> &mdash; AI-generated announcements, social posts, recruitment materials</li>
+          <li><strong>Candidate Pipeline</strong> &mdash; The ecosystem connects students directly to partner schools</li>
+          <li><strong>Consistent Voice</strong> &mdash; Every school speaks with the authority of CMS Europe</li>
+          <li><strong>Growth Support</strong> &mdash; Data-driven insights to help partners expand enrolments</li>
+        </ul>
+      </div>
+
+      <div class="benefit-col">
+        <p class="benefit-col-title">Sponsors</p>
+        <p class="benefit-col-sub">Pillar III</p>
+        <ul class="benefit-items">
+          <li><strong>Magazine Features</strong> &mdash; Dedicated editorial content and brand storytelling</li>
+          <li><strong>AI Brand Content</strong> &mdash; Social media posts, newsletter features, tasting notes at scale</li>
+          <li><strong>Sponsorship Programme</strong> &mdash; Transparent process, defined packages, measurable value</li>
+          <li><strong>Community Access</strong> &mdash; Direct connection to the world's best wine professionals</li>
+          <li><strong>LinkedIn &amp; Social</strong> &mdash; Consistent, professional content across all platforms</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="benefits-bottom">
+      <p>Save time. Consistent content. No more wondering what to post. The AI generates it &mdash; in the CMS Europe voice, for every platform, for every audience. The more the ecosystem grows, the stronger the advantage becomes. <em>This is how CMS Europe leads the sommelier world into the future.</em></p>
     </div>
   </div>
 </div>
