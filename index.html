@@ -300,6 +300,51 @@ nav{
   font-weight:300;max-width:700px;margin:0 auto;line-height:1.8;
 }
 
+/* ── INVESTMENT ── */
+.invest-card{
+  border:1px solid var(--rule);
+  background:var(--cream);
+  margin:3rem 0;
+}
+.invest-header{
+  background:var(--ink);
+  padding:3rem 3.5rem;
+  text-align:center;
+}
+.invest-label{
+  font-size:14px;letter-spacing:0.22em;text-transform:uppercase;
+  color:var(--burg);font-weight:500;margin-bottom:0.75rem;
+}
+.invest-price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:72px;font-weight:300;color:rgba(255,255,255,0.95);
+  line-height:1;margin-bottom:0.5rem;
+}
+.invest-price span{font-size:36px;color:rgba(255,255,255,0.5);vertical-align:top;line-height:1.8}
+.invest-period{font-size:20px;color:rgba(255,255,255,0.50);font-weight:300}
+.invest-body{padding:3rem 3.5rem}
+.invest-includes{
+  list-style:none;padding:0;margin:0 0 2rem;
+  display:flex;flex-direction:column;gap:1rem;
+}
+.invest-includes li{
+  font-size:20px;color:var(--ink2);font-weight:300;line-height:1.6;
+  padding-left:1.75rem;position:relative;
+}
+.invest-includes li::before{
+  content:'';position:absolute;left:0;top:10px;
+  width:8px;height:8px;border-radius:50%;background:var(--burg);
+}
+.invest-note{
+  font-size:18px;color:var(--muted);font-weight:300;line-height:1.75;
+  padding-top:1.5rem;border-top:1px solid var(--rule);
+}
+@media(max-width:900px){
+  .invest-header{padding:2.5rem 2rem}
+  .invest-body{padding:2.5rem 2rem}
+  .invest-price{font-size:56px}
+}
+
 /* ── CLOSING ── */
 .closing{padding:9rem 0 7rem;text-align:center}
 .closing-title{
@@ -744,11 +789,38 @@ footer{
   </div>
 </div>
 
-<!-- 11 NEXT STEP -->
-<div class="sec reveal" id="next">
+<!-- 11 INVESTMENT -->
+<div class="sec reveal" id="investment">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">11</span>
+      <h2 class="sec-title">The Investment</h2></div>
+      <p class="sec-motto">Enterprise partnership. Clear terms. No surprises.</p>
+    </div>
+    <div class="invest-card">
+      <div class="invest-header">
+        <p class="invest-label">Enterprise Partnership &mdash; First 6 Months</p>
+        <p class="invest-price"><span>$</span>2,500<span>/mo</span></p>
+        <p class="invest-period">Introductory rate &mdash; 6-month engagement</p>
+      </div>
+      <div class="invest-body">
+        <ul class="invest-includes">
+          <li><strong>Phase 1 Discovery</strong> &mdash; Weekly meetings, brand &amp; voice documentation, full content &amp; data audit, Phase 2 roadmap</li>
+          <li><strong>Ecosystem Architecture</strong> &mdash; Strategic planning for candidates, partners, and sponsors across the full ecosystem</li>
+          <li><strong>AI Foundation</strong> &mdash; Data structuring and preparation for CMS Europe AI development</li>
+          <li><strong>This Portal</strong> &mdash; Weekly and monthly progress reports, news, and deliverables &mdash; all visible here at cms.sommdigi.wine</li>
+        </ul>
+        <p class="invest-note">After six months, SOMM DIGI and CMS Europe review the progress together and align on the next phase. As AI technology evolves, the investment may be adjusted &mdash; with full transparency. The goal is a long-term partnership, not a short-term contract.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 12 NEXT STEP -->
+<div class="sec reveal" id="next">
+  <div class="wrap">
+    <div class="sec-hd">
+      <div class="sec-hd-top"><span class="sec-num">12</span>
       <h2 class="sec-title">One Conversation to Begin</h2></div>
       <p class="sec-motto">Three months. Low risk. High value. A foundation for decades.</p>
     </div>
