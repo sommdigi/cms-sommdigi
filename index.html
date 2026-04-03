@@ -137,6 +137,10 @@ nav{
 .cover-step-row{display:flex;align-items:baseline;gap:1rem}
 .cover-step-num{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--burg);font-weight:600;min-width:30px}
 .cover-step-name{font-size:18px;color:rgba(255,255,255,0.70);font-weight:300}
+a.cover-step-row{text-decoration:none;display:flex;align-items:baseline;gap:1rem;cursor:pointer;transition:transform 0.2s ease}
+a.cover-step-row:hover{transform:translateX(6px)}
+a.cover-step-row:hover .cover-step-name{color:rgba(255,255,255,0.95)}
+[id^="step"]{scroll-margin-top:80px}
 
 /* ── SCROLL REVEAL ── */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity 0.9s ease,transform 0.9s ease}
@@ -381,16 +385,16 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
     <div class="cover-steps">
       <p class="cover-steps-title">10 Steps to AI Adaptation</p>
       <div class="cover-steps-list">
-        <div class="cover-step-row"><span class="cover-step-num">01</span><span class="cover-step-name">The Excellence</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">02</span><span class="cover-step-name">The World Is Changing</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">03</span><span class="cover-step-name">The Goal</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">04</span><span class="cover-step-name">The Ecosystem</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">05</span><span class="cover-step-name">Three Pillars</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">06</span><span class="cover-step-name">What Gets Built</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">07</span><span class="cover-step-name">Listen First</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">08</span><span class="cover-step-name">Build Together</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">09</span><span class="cover-step-name">Scale to the World</span></div>
-        <div class="cover-step-row"><span class="cover-step-num">10</span><span class="cover-step-name">The Right Partner</span></div>
+        <a href="#step01" class="cover-step-row"><span class="cover-step-num">01</span><span class="cover-step-name">The Excellence</span></a>
+        <a href="#step02" class="cover-step-row"><span class="cover-step-num">02</span><span class="cover-step-name">The World Is Changing</span></a>
+        <a href="#step03" class="cover-step-row"><span class="cover-step-num">03</span><span class="cover-step-name">The Goal</span></a>
+        <a href="#step04" class="cover-step-row"><span class="cover-step-num">04</span><span class="cover-step-name">The Ecosystem</span></a>
+        <a href="#step05" class="cover-step-row"><span class="cover-step-num">05</span><span class="cover-step-name">Three Pillars</span></a>
+        <a href="#step06" class="cover-step-row"><span class="cover-step-num">06</span><span class="cover-step-name">What Gets Built</span></a>
+        <a href="#step07" class="cover-step-row"><span class="cover-step-num">07</span><span class="cover-step-name">Listen First</span></a>
+        <a href="#step08" class="cover-step-row"><span class="cover-step-num">08</span><span class="cover-step-name">Build Together</span></a>
+        <a href="#step09" class="cover-step-row"><span class="cover-step-num">09</span><span class="cover-step-name">Scale to the World</span></a>
+        <a href="#step10" class="cover-step-row"><span class="cover-step-num">10</span><span class="cover-step-name">The Right Partner</span></a>
       </div>
     </div>
   </div>
@@ -403,7 +407,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 <div id="steps"></div>
 
 <!-- STEP 01 — THE EXCELLENCE -->
-<div class="sec reveal">
+<div class="sec reveal" id="step01">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 01</span>
@@ -425,7 +429,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEP 02 — THE WORLD IS CHANGING -->
-<div class="sec reveal">
+<div class="sec reveal" id="step02">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 02</span>
@@ -451,7 +455,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEP 03 — THE GOAL -->
-<div class="sec reveal">
+<div class="sec reveal" id="step03">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 03</span>
@@ -468,7 +472,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEP 04 — THE ECOSYSTEM -->
-<div class="sec reveal">
+<div class="sec reveal" id="step04">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 04</span>
@@ -488,7 +492,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEP 05 — THREE PILLARS -->
-<div class="sec reveal" id="pillars">
+<div class="sec reveal" id="step05">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 05</span>
@@ -519,7 +523,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEP 06 — WHAT GETS BUILT -->
-<div class="sec reveal" id="built">
+<div class="sec reveal" id="step06">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 06</span>
@@ -583,7 +587,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEPS 07-09 — THE ROADMAP (DARK) -->
-<div class="sec-dark" id="roadmap">
+<div class="sec-dark" id="step07">
   <div class="wrap">
 
     <!-- STEP 07 -->
@@ -622,6 +626,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
     </div>
 
     <!-- STEP 08 -->
+    <div id="step08"></div>
     <div class="sec-hd reveal">
       <div class="sec-hd-top"><span class="sec-num">Step 08</span>
       <h2 class="sec-title">Build Together</h2></div>
@@ -634,6 +639,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
     </div>
 
     <!-- STEP 09 -->
+    <div id="step09"></div>
     <div class="sec-hd reveal">
       <div class="sec-hd-top"><span class="sec-num">Step 09</span>
       <h2 class="sec-title">Scale to the World</h2></div>
@@ -650,7 +656,7 @@ footer{border-top:1px solid var(--rule);padding:2rem 3rem;display:flex;align-ite
 </div>
 
 <!-- STEP 10 — THE RIGHT PARTNER -->
-<div class="sec reveal">
+<div class="sec reveal" id="step10">
   <div class="wrap">
     <div class="sec-hd">
       <div class="sec-hd-top"><span class="sec-num">Step 10</span>
