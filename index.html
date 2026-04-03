@@ -18,13 +18,13 @@
   --cream:#F7F3ED;
   --cream2:#EDE6D8;
   --ink:#18130F;
-  --ink2:#3A3028;
-  --muted:#8C7E74;
+  --ink2:#2E261F;
+  --muted:#5C5248;
   --rule:#D4C5B5;
   --white:#FFFFFF;
 }
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;font-size:19px}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.9;font-weight:300;-webkit-font-smoothing:antialiased}
 
 /* ── NAV ── */
 nav{
@@ -40,7 +40,7 @@ nav{
 .nav-sep{width:1px;height:20px;background:var(--rule)}
 .nav-brand{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:600;letter-spacing:0.05em;color:var(--burg)}
 .nav-links{display:flex;gap:1.75rem;list-style:none}
-.nav-links a{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:400;transition:color 0.2s;text-decoration:none}
+.nav-links a{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:400;transition:color 0.2s;text-decoration:none}
 .nav-links a:hover{color:var(--burg)}
 .nav-cta{
   margin-left:1rem;
@@ -120,23 +120,26 @@ nav{
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* ── SECTIONS ── */
-.sec{padding:7rem 0;border-bottom:1px solid var(--rule)}
+.sec{padding:8rem 0;border-bottom:1px solid var(--rule)}
 .sec:last-of-type{border-bottom:none}
 .wrap{max-width:820px;margin:0 auto;padding:0 2.5rem}
 
-.sec-hd{display:flex;align-items:baseline;gap:1.5rem;margin-bottom:3.5rem}
+.sec-hd{display:flex;flex-direction:column;gap:0.5rem;margin-bottom:3.5rem}
+.sec-hd-top{display:flex;align-items:baseline;gap:1.5rem}
 .sec-num{font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--burg);font-weight:500;flex-shrink:0;padding-top:3px}
-.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,44px);font-weight:300;line-height:1.1;color:var(--ink)}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,46px);font-weight:300;line-height:1.1;color:var(--ink)}
+.sec-motto{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--muted);margin-top:0.6rem;padding-left:3.2rem}
 
-.body p{color:var(--ink2);margin-bottom:1.4rem;font-size:16px;font-weight:300;max-width:680px}
+.body p{color:var(--ink2);margin-bottom:1.6rem;font-size:18px;font-weight:300;max-width:700px}
 .body p:last-child{margin-bottom:0}
-.body em{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--ink);line-height:1.6}
+.body em{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:21px;color:var(--ink);line-height:1.7}
+.body strong{font-weight:500;color:var(--ink)}
 
 /* ── STAT ROW ── */
 .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin:3rem 0}
 .stat{background:var(--cream);padding:2rem 1.75rem}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:300;color:var(--burg);line-height:1;margin-bottom:0.5rem}
-.stat-lbl{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:54px;font-weight:300;color:var(--burg);line-height:1;margin-bottom:0.5rem}
+.stat-lbl{font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
 
 /* ── THREE GROUPS ── */
 .groups{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin:3rem 0}
@@ -149,6 +152,7 @@ nav{
 .sec-dark{background:var(--ink);padding:7rem 0}
 .sec-dark .sec-num{color:var(--burg)}
 .sec-dark .sec-title{color:rgba(255,255,255,0.88)}
+.sec-dark .sec-motto{color:rgba(255,255,255,0.4)}
 
 .tl{position:relative;margin-top:1rem}
 .tl::before{content:'';position:absolute;left:18px;top:8px;bottom:0;width:1px;background:rgba(255,255,255,0.08)}
@@ -157,7 +161,7 @@ nav{
 .tl-dot{position:absolute;left:12px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--ink);border:2px solid var(--burg)}
 .tl-lbl{font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--burg);font-weight:500;margin-bottom:0.5rem}
 .tl-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:rgba(255,255,255,0.85);margin-bottom:1rem}
-.tl-body{font-size:15px;color:rgba(255,255,255,0.5);line-height:1.8;font-weight:300;max-width:620px}
+.tl-body{font-size:16px;color:rgba(255,255,255,0.6);line-height:1.85;font-weight:300;max-width:640px}
 .tl-body+.tl-body{margin-top:0.85rem}
 
 /* ── QUOTE BLOCK ── */
@@ -257,11 +261,11 @@ footer{
     <span class="nav-brand">SOMM DIGI</span>
   </div>
   <ul class="nav-links">
-    <li><a href="#vision">Vision</a></li>
-    <li><a href="#groups">Three Groups</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#why">Why SOMM DIGI</a></li>
-    <li><a href="#next">Next Step</a></li>
+    <li><a href="#vision">Next 50 Years</a></li>
+    <li><a href="#groups">Who Benefits</a></li>
+    <li><a href="#roadmap">Step by Step</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#next">Let's Begin</a></li>
   </ul>
   <a class="nav-cta" href="#" onclick="window.print();return false;">Download Full Vision</a>
 </nav>
@@ -317,13 +321,15 @@ footer{
 <div class="sec reveal" id="opening">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">01</span>
-      <h2 class="sec-title">Opening</h2>
+      <div class="sec-hd-top"><span class="sec-num">01</span>
+      <h2 class="sec-title">Why This Proposal Exists</h2></div>
+      <p class="sec-motto">Great wine is never rushed. Neither is great partnership.</p>
     </div>
     <div class="body">
       <p>Great wine is never rushed. The finest Barolo, the most elegant Bordeaux &mdash; they are not made in a season. They are built over years, with patience, precision, and a deep respect for what came before.</p>
-      <p>This is how we see this partnership.</p>
-      <p>We are not here to change what CMS Europe has built over 50 years. We are here to make sure it is ready for the next 50. Not by replacing anything. But by adapting &mdash; quietly, carefully, and with the same commitment to excellence that has always defined the Court of Master Sommeliers.</p>
+      <p><strong>This is how we see this partnership.</strong></p>
+      <p>We are not here to change what CMS Europe has built over 50 years. We are here to make sure it is ready for the next 50.</p>
+      <p>Not by replacing anything. But by adapting &mdash; quietly, carefully, and with the same commitment to excellence that has always defined the Court.</p>
       <p><em>The bottle is not ready to open yet. But it is time to start making the wine.</em></p>
     </div>
   </div>
@@ -333,8 +339,9 @@ footer{
 <div class="sec reveal" id="today">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title">Where CMS Europe Stands Today</h2>
+      <div class="sec-hd-top"><span class="sec-num">02</span>
+      <h2 class="sec-title">What You've Built &mdash; And What's Changing</h2></div>
+      <p class="sec-motto">50 years of excellence. A world that is catching up.</p>
     </div>
     <div class="stat-row">
       <div class="stat">
@@ -351,11 +358,14 @@ footer{
       </div>
     </div>
     <div class="body">
-      <p>The Court of Master Sommeliers was established in 1969. In over 50 years, it has become the most respected examining body for sommeliers in the world. Only 293 people hold the Master Sommelier diploma. That number means something. It represents a standard that has never been compromised.</p>
-      <p>Today, CMS Europe runs courses across Europe, Oceania, Asia, and the Americas. It supports a growing network of partner schools, sponsors, and candidates at every level &mdash; from Introductory to Master Sommelier.</p>
-      <p>But the world around it is changing fast.</p>
-      <p>Candidates want more than a certification. They want a community, a career, a voice. Partner schools carry the CMS brand with pride but need more support to grow. Sponsors want real visibility, not just a logo on a page. And the sommelier profession itself is evolving &mdash; beyond the restaurant floor, into new industries, new roles, new opportunities.</p>
-      <p>CMS Europe has everything it needs to lead this new world. The reputation. The network. The standards. What it needs now is the right partner to help it adapt.</p>
+      <p>The Court of Master Sommeliers was established in 1969. In over 50 years, it has become <strong>the most respected examining body for sommeliers in the world</strong>.</p>
+      <p>Only 293 people hold the Master Sommelier diploma. That number means something. It represents a standard that has never been compromised.</p>
+      <p>Today, CMS Europe runs courses across Europe, Oceania, Asia, and the Americas. It supports a growing network of partner schools, sponsors, and candidates at every level.</p>
+      <p><strong>But the world around it is changing fast.</strong></p>
+      <p>Candidates want more than a certification. They want a community, a career, a voice.</p>
+      <p>Partner schools carry the CMS brand with pride but need more support to grow. Sponsors want real visibility, not just a logo on a page.</p>
+      <p>The sommelier profession itself is evolving &mdash; beyond the restaurant floor, into new industries, new roles, new opportunities.</p>
+      <p>CMS Europe has everything it needs to lead this new world. The reputation. The network. The standards. <strong>What it needs now is the right partner to help it adapt.</strong></p>
     </div>
   </div>
 </div>
@@ -364,14 +374,17 @@ footer{
 <div class="sec reveal" id="vision">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">03</span>
-      <h2 class="sec-title">The Vision &mdash; Road to 2030</h2>
+      <div class="sec-hd-top"><span class="sec-num">03</span>
+      <h2 class="sec-title">The Next 50 Years</h2></div>
+      <p class="sec-motto">Not a technology project. An adaptation.</p>
     </div>
     <div class="body">
-      <p>The vision is simple. CMS Europe becomes the leading sommelier ecosystem in the world.</p>
+      <p><strong>The vision is simple.</strong> CMS Europe becomes the leading sommelier ecosystem in the world.</p>
       <p>Not just an exam body. A full, living community &mdash; where candidates grow, partners thrive, sponsors connect, and the sommelier profession finds its future.</p>
-      <p>We call this the Road to 2030. It is not a technology project. It is an adaptation. A natural evolution of everything CMS Europe has already built &mdash; extended into the digital world, supported by AI, and guided by the same values that have defined the Court for over half a century.</p>
-      <p>At the center of this ecosystem is one powerful idea: everything we build feeds everything else. The content feeds the AI. The AI powers the magazine. The magazine builds the community. The community attracts the sponsors. The sponsors fund the growth. And the growth brings more candidates, more partners, more sommeliers into the world of CMS Europe.</p>
+      <p>We call this the Road to 2030. It is not a technology project. It is an adaptation.</p>
+      <p>A natural evolution of everything CMS Europe has already built &mdash; extended into the digital world, supported by AI, and guided by the same values that have defined the Court for over half a century.</p>
+      <p><strong>At the center is one powerful idea: everything we build feeds everything else.</strong></p>
+      <p>The content feeds the AI. The AI powers the magazine. The magazine builds the community. The community attracts the sponsors. The sponsors fund the growth. And the growth brings more candidates, more partners, more sommeliers into the world of CMS Europe.</p>
     </div>
     <div class="quote-block">
       <p>Adaptation is not the end of tradition. It is how tradition survives.</p>
@@ -383,8 +396,9 @@ footer{
 <div class="sec reveal" id="groups">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">04</span>
-      <h2 class="sec-title">The Three Groups</h2>
+      <div class="sec-hd-top"><span class="sec-num">04</span>
+      <h2 class="sec-title">Who Benefits</h2></div>
+      <p class="sec-motto">Candidates. Partners. Sponsors. Everyone grows.</p>
     </div>
     <div class="body">
       <p>The CMS Europe ecosystem serves three distinct groups. Each one has a different need. Each one represents a different opportunity. And each one is essential to making the whole system work.</p>
@@ -413,15 +427,19 @@ footer{
 <div class="sec reveal" id="ai">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">05</span>
-      <h2 class="sec-title">Why AI Needs to Be Built Right</h2>
+      <div class="sec-hd-top"><span class="sec-num">05</span>
+      <h2 class="sec-title">Why We Start Slow</h2></div>
+      <p class="sec-motto">The AI is the wine. The data is the grape. First, we tend the vineyard.</p>
     </div>
     <div class="body">
       <p>Everyone is talking about AI. But very few people are building it the right way.</p>
-      <p>The most common mistake is to rush. To grab a tool, install it, and call it done. That is not AI. That is a shortcut. And shortcuts in AI produce the wrong results &mdash; answers that sound confident but are wrong, content that feels generic, systems that do not understand who you are or what you stand for.</p>
-      <p>Building AI the right way starts with one thing: organized, high quality data.</p>
-      <p>Before any AI can speak in the voice of CMS Europe, it needs to know CMS Europe deeply. Its history. Its standards. Its tone of voice. Its candidates, its partners, its sponsors. The way a Master Sommelier thinks. The way CMS Europe communicates. The values that have never changed in 50 years.</p>
-      <p>This is why Phase 1 is not about technology. It is about knowledge. We sit together. We listen. We document. We organize. We collect every piece of information that makes CMS Europe what it is &mdash; and we structure it in a way that will one day train the most knowledgeable sommelier AI in the world.</p>
+      <p><strong>The most common mistake is to rush.</strong> To grab a tool, install it, and call it done. That is not AI. That is a shortcut.</p>
+      <p>Shortcuts in AI produce the wrong results &mdash; answers that sound confident but are wrong, content that feels generic, systems that do not understand who you are or what you stand for.</p>
+      <p>Building AI the right way starts with one thing: <strong>organized, high quality data.</strong></p>
+      <p>Before any AI can speak in the voice of CMS Europe, it needs to know CMS Europe deeply. Its history. Its standards. Its tone of voice.</p>
+      <p>Its candidates, its partners, its sponsors. The way a Master Sommelier thinks. The way CMS Europe communicates. The values that have never changed in 50 years.</p>
+      <p><strong>This is why Phase 1 is not about technology. It is about knowledge.</strong></p>
+      <p>We sit together. We listen. We document. We organize. We collect every piece of information that makes CMS Europe what it is &mdash; and we structure it in a way that will one day train the most knowledgeable sommelier AI in the world.</p>
     </div>
     <div class="quote-block">
       <p>The AI is the wine. The data is the grape. And right now, we need to tend the vineyard.<br><br>No great wine was ever made from poor fruit.</p>
@@ -433,8 +451,9 @@ footer{
 <div class="sec-dark reveal" id="roadmap">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">06 &mdash; 08</span>
-      <h2 class="sec-title">The Roadmap</h2>
+      <div class="sec-hd-top"><span class="sec-num">06 &mdash; 08</span>
+      <h2 class="sec-title">How We Get There &mdash; Step by Step</h2></div>
+      <p class="sec-motto">Listen first. Build second. Scale together.</p>
     </div>
     <div class="tl">
 
@@ -496,16 +515,19 @@ footer{
 <div class="sec reveal" id="why">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">09</span>
-      <h2 class="sec-title">Why SOMM DIGI &mdash; Why Alper</h2>
+      <div class="sec-hd-top"><span class="sec-num">09</span>
+      <h2 class="sec-title">A Sommelier Who Builds Technology</h2></div>
+      <p class="sec-motto">Not a tech company that discovered wine. A sommelier who discovered technology.</p>
     </div>
     <div class="body">
-      <p>SOMM DIGI was not built by a technology company that discovered wine. It was built by a sommelier who discovered technology.</p>
-      <p>Alper Billik holds the Advanced Sommelier certificate from the Court of Master Sommeliers &mdash; the same institution this proposal is written for. He has spent over 15 years working in wine and hospitality, building real knowledge from the inside. He knows what a candidate feels walking into an exam. He knows what a sommelier needs after they pass. He knows this world &mdash; not from the outside, but from within it.</p>
-      <p>At the same time, he has spent the last several years building AI tools specifically for the wine profession. SOMM DIGI is already a working AI platform &mdash; not a concept, not a pitch deck, but a real product used by real wine professionals.</p>
-      <p>There are technology companies that could build an AI for CMS Europe. But they would not understand the deductive tasting grid. They would not know the difference between a Certified and an Advanced candidate. They would not feel the weight of the Master Sommelier diploma.</p>
+      <p>SOMM DIGI was not built by a technology company that discovered wine. <strong>It was built by a sommelier who discovered technology.</strong></p>
+      <p>Alper Billik holds the Advanced Sommelier certificate from the Court of Master Sommeliers &mdash; the same institution this proposal is written for.</p>
+      <p>He has spent over 15 years working in wine and hospitality, building real knowledge from the inside. He knows what a candidate feels walking into an exam. He knows what a sommelier needs after they pass.</p>
+      <p>He knows this world &mdash; not from the outside, but from within it.</p>
+      <p>At the same time, he has spent the last several years building AI tools specifically for the wine profession. <strong>SOMM DIGI is already a working AI platform</strong> &mdash; not a concept, not a pitch deck, but a real product used by real wine professionals.</p>
+      <p>There are technology companies that could build an AI for CMS Europe. But they would not understand the deductive tasting grid. They would not know the difference between a Certified and an Advanced candidate.</p>
       <p>And there are sommeliers who understand CMS Europe deeply. But they are not building AI platforms.</p>
-      <p>SOMM DIGI sits exactly at that intersection. And that is why this partnership makes sense &mdash; not just commercially, but fundamentally. This is the right project for the right partner at the right moment.</p>
+      <p><strong>SOMM DIGI sits exactly at that intersection.</strong> This is the right project for the right partner at the right moment.</p>
     </div>
   </div>
 </div>
@@ -514,13 +536,16 @@ footer{
 <div class="sec reveal" id="next">
   <div class="wrap">
     <div class="sec-hd">
-      <span class="sec-num">10</span>
-      <h2 class="sec-title">Next Step</h2>
+      <div class="sec-hd-top"><span class="sec-num">10</span>
+      <h2 class="sec-title">One Conversation to Begin</h2></div>
+      <p class="sec-motto">Three months. Low risk. High value. A foundation for decades.</p>
     </div>
     <div class="body">
-      <p>The road to 2030 starts with a single conversation.</p>
-      <p>We are not asking for a long term commitment today. We are not asking CMS Europe to change anything overnight. We are simply asking for the opportunity to begin &mdash; together, carefully, and with a shared belief that the sommelier world deserves to be ready for what is coming.</p>
-      <p>Phase 1 is three months. A small, focused start. Weekly meetings, deep listening, and a clear roadmap delivered at the end. Low risk. High value. And a foundation that will serve CMS Europe for decades.</p>
+      <p><strong>The road to 2030 starts with a single conversation.</strong></p>
+      <p>We are not asking for a long term commitment today. We are not asking CMS Europe to change anything overnight.</p>
+      <p>We are simply asking for the opportunity to begin &mdash; together, carefully, and with a shared belief that the sommelier world deserves to be ready for what is coming.</p>
+      <p>Phase 1 is three months. A small, focused start. Weekly meetings, deep listening, and a clear roadmap delivered at the end.</p>
+      <p><strong>Low risk. High value. A foundation that will serve CMS Europe for decades.</strong></p>
       <p>The next step is simple. A meeting to align on Phase 1, ask any questions, and decide if we move forward together.</p>
       <p>We believe this is the right partnership. We believe the timing is right. And we believe that what we build together will set a new standard &mdash; not just for wine education, but for how a great institution adapts to a new world.</p>
     </div>
