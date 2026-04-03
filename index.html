@@ -179,9 +179,19 @@ nav{
 .pillar-content{}
 .pillar-name{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:var(--ink);margin-bottom:0.75rem}
 .pillar-what{font-size:20px;color:var(--ink2);line-height:1.8;font-weight:300;margin-bottom:1rem}
+.pillar-list{
+  list-style:none;padding:0;margin:1.25rem 0 1.5rem;
+  display:flex;flex-direction:column;gap:1.25rem;
+}
+.pillar-list li{
+  font-size:19px;color:var(--ink2);line-height:1.75;font-weight:300;
+  padding-left:1.5rem;
+  border-left:2px solid var(--rule);
+}
+.pillar-list li strong{font-weight:500;color:var(--ink)}
 .pillar-why{
   font-size:18px;color:var(--burg);font-weight:400;
-  padding:1rem 1.25rem;
+  padding:1.25rem 1.5rem;
   background:rgba(107,39,55,0.06);
   border-left:3px solid var(--burg);
   line-height:1.7;
@@ -539,15 +549,12 @@ footer{
 </div>
 
 <!-- 05 THREE PILLARS -->
-<div class="sec reveal" id="pillars">
+<div class="sec reveal" id="pillars" style="padding-top:5rem">
   <div class="wrap">
-    <div class="sec-hd">
+    <div class="sec-hd" style="margin-bottom:2rem">
       <div class="sec-hd-top"><span class="sec-num">05</span>
       <h2 class="sec-title">The Three Pillars</h2></div>
       <p class="sec-motto">Everyone becomes more valuable under the CMS Europe name.</p>
-    </div>
-    <div class="body">
-      <p>The ecosystem serves three groups. Each pillar has a clear purpose, a clear reason, and a clear benefit. <strong>Together, they make the whole system work.</strong></p>
     </div>
     <div class="pillars stagger">
 
@@ -555,8 +562,13 @@ footer{
         <div class="pillar-icon">I</div>
         <div class="pillar-content">
           <p class="pillar-name">Candidates &amp; Students</p>
-          <p class="pillar-what">From Introductory to Master Sommelier &mdash; candidates are the heart of CMS Europe. The ecosystem extends their journey beyond the exam. Career portal, magazine, community, professional profiles &mdash; the CMS Europe name continues to open doors long after certification.</p>
-          <p class="pillar-why"><strong>Why this matters for AI:</strong> The AI needs to know who it serves &mdash; their journey, their questions, their career goals. A connected candidate network is what makes the AI genuinely useful.</p>
+          <p class="pillar-what">From Introductory to Master Sommelier &mdash; candidates are the heart of CMS Europe. The ecosystem extends their journey far beyond the exam:</p>
+          <ul class="pillar-list">
+            <li><strong>Career Portal</strong> &mdash; Candidates create professional profiles, share their qualifications, and connect with employers worldwide. Wine directors, brand ambassadors, educators &mdash; the right roles find the right people.</li>
+            <li><strong>CMS Europe Magazine</strong> &mdash; A quarterly publication featuring interviews with Master Sommeliers, candidate success stories, and industry insights. AI-assisted, human-led &mdash; content that keeps the community connected and growing.</li>
+            <li><strong>Community &amp; Networking</strong> &mdash; A lifelong professional network under the CMS Europe name. Not just a certificate on the wall &mdash; an active, living community that opens doors throughout an entire career.</li>
+          </ul>
+          <p class="pillar-why"><strong>Why this is essential for AI:</strong> The AI learns from the candidate journey &mdash; their questions, their progress, their career paths. A connected candidate network is what makes the AI genuinely knowledgeable and useful.</p>
         </div>
       </div>
 
@@ -564,8 +576,13 @@ footer{
         <div class="pillar-icon">II</div>
         <div class="pillar-content">
           <p class="pillar-name">Partners</p>
-          <p class="pillar-what">CMS Europe's partner schools in India, Australia, Hong Kong, and beyond carry the brand with pride. The ecosystem gives them a dedicated directory, content support, candidate pipelines, and real visibility &mdash; so they grow alongside CMS Europe, not just beside it.</p>
-          <p class="pillar-why"><strong>Why this matters for AI:</strong> The AI needs consistent, quality content from every school. A connected partner network ensures the AI speaks with one voice across the world.</p>
+          <p class="pillar-what">CMS Europe's partner schools in India, Australia, Hong Kong, and beyond carry the brand with pride. The ecosystem gives them real tools to grow:</p>
+          <ul class="pillar-list">
+            <li><strong>Partner Directory</strong> &mdash; A dedicated, visible home for every CMS Europe partner school in the world. Clear, professional, easy for candidates to find.</li>
+            <li><strong>Content &amp; Marketing Support</strong> &mdash; AI-generated content in the CMS Europe voice &mdash; course announcements, social media, candidate recruitment materials &mdash; consistent quality across every market.</li>
+            <li><strong>Candidate Pipeline</strong> &mdash; The ecosystem connects interested candidates directly with their nearest partner school. More visibility, more enrolments, more growth.</li>
+          </ul>
+          <p class="pillar-why"><strong>Why this is essential for AI:</strong> The AI speaks with one voice across every partner school in the world. Consistent content, consistent quality, consistent standards &mdash; powered by a connected partner network.</p>
         </div>
       </div>
 
@@ -573,8 +590,13 @@ footer{
         <div class="pillar-icon">III</div>
         <div class="pillar-content">
           <p class="pillar-name">Sponsors</p>
-          <p class="pillar-what">Coravin, Ruinart, Zalto, Jackson Family Wines &mdash; world class brands that believe in the sommelier profession. The ecosystem gives them magazine features, AI-powered content, a transparent application process, and genuine access to the community they support.</p>
-          <p class="pillar-why"><strong>Why this matters for AI:</strong> Sponsors sustain the ecosystem. The AI helps create content in their voice, increasing their value and funding the growth of the entire system.</p>
+          <p class="pillar-what">Coravin, Ruinart, Zalto, Jackson Family Wines &mdash; world class brands that deserve more than a logo. The ecosystem gives them a real presence:</p>
+          <ul class="pillar-list">
+            <li><strong>Magazine Features</strong> &mdash; Dedicated editorial content in the CMS Europe Magazine. Brand stories, product spotlights, sommelier partnerships &mdash; authentic storytelling that reaches the most passionate wine professionals in the world.</li>
+            <li><strong>AI-Powered Content</strong> &mdash; The AI creates branded content in the sponsor's voice &mdash; social posts, newsletter features, tasting notes &mdash; professional quality, produced at scale.</li>
+            <li><strong>Transparent Sponsorship Programme</strong> &mdash; A clear application process, defined visibility packages, and measurable value. New brands can join the CMS Europe world with confidence.</li>
+          </ul>
+          <p class="pillar-why"><strong>Why this is essential for AI:</strong> Sponsors sustain the ecosystem. The AI creates genuine value for every sponsor &mdash; increasing their investment, funding the growth of the entire system.</p>
         </div>
       </div>
 
