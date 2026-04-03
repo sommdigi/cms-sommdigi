@@ -345,6 +345,46 @@ nav{
   .invest-price{font-size:56px}
 }
 
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:0;margin:2.5rem 0}
+.faq-item{border:1px solid var(--rule);border-bottom:none;overflow:hidden}
+.faq-item:last-child{border-bottom:1px solid var(--rule)}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  padding:2rem 2.5rem;cursor:pointer;background:var(--cream);
+  transition:background 0.3s ease;
+  -webkit-user-select:none;user-select:none;
+}
+.faq-q:hover{background:var(--cream2)}
+.faq-q-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:26px;font-weight:600;color:var(--ink);line-height:1.35;
+}
+.faq-toggle{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;font-weight:300;color:var(--burg);
+  flex-shrink:0;width:36px;height:36px;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 0.3s ease;
+}
+.faq-item.open .faq-toggle{transform:rotate(45deg)}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height 0.5s ease,padding 0.3s ease;
+  background:var(--cream2);
+}
+.faq-item.open .faq-a{max-height:400px;padding:2rem 2.5rem}
+.faq-a p{
+  font-size:20px;color:var(--ink2);font-weight:300;line-height:1.8;
+  margin:0;max-width:760px;
+}
+@media(max-width:900px){
+  .faq-q{padding:1.75rem 2rem}
+  .faq-q-text{font-size:22px}
+  .faq-item.open .faq-a{padding:1.75rem 2rem}
+  .faq-a p{font-size:19px}
+}
+
 /* ── CLOSING ── */
 .closing{padding:9rem 0 7rem;text-align:center}
 .closing-title{
@@ -442,6 +482,7 @@ footer{
     <li><a href="#roadmap">Step by Step</a></li>
     <li><a href="#why">Why SOMM DIGI</a></li>
     <li><a href="#investment">Investment</a></li>
+    <li><a href="#faq">FAQ</a></li>
   </ul>
   <a class="nav-cta" href="#next">Let's Begin</a>
 </nav>
@@ -816,11 +857,85 @@ footer{
   </div>
 </div>
 
-<!-- 12 NEXT STEP -->
+<!-- 12 FAQ -->
+<div class="sec reveal" id="faq">
+  <div class="wrap">
+    <div class="sec-hd" style="margin-bottom:2rem">
+      <div class="sec-hd-top"><span class="sec-num">12</span>
+      <h2 class="sec-title">Frequently Asked Questions</h2></div>
+      <p class="sec-motto">Clear answers. No ambiguity.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">Does the ecosystem change how CMS Europe operates?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">
+          <p>No. CMS Europe's education, examinations, and standards remain exactly as they are. The ecosystem is built entirely around them &mdash; not inside them. The tradition stays untouched. The ecosystem extends its reach into the new world.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">Does SOMM DIGI have any involvement with the CMS Europe trademark or brand identity?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">
+          <p>No. The CMS Europe name, brand, and identity belong entirely to CMS Europe. SOMM DIGI builds the ecosystem to serve and protect that identity &mdash; never to alter it. Every piece of content, every AI output, every design element follows the standards and voice of CMS Europe.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">What does "adaptation" mean in this context?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">
+          <p>The world is changing. AI is becoming part of every industry. Adaptation means making CMS Europe ready for this new world &mdash; without changing anything about what makes it great. The same excellence, the same standards, the same tradition &mdash; now extended into a digital ecosystem that connects candidates, partners, and sponsors in ways that were not possible before.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">Why an ecosystem and not just AI?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">
+          <p>AI without a foundation produces poor results. The ecosystem organises candidates, partners, and sponsors into a connected system &mdash; and that connected system is what the AI needs to work properly. The ecosystem is the vineyard. The AI is the wine. One cannot exist without the other.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">Who owns everything that is built?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">
+          <p>CMS Europe. Every deliverable, every piece of content, every system, every AI model. SOMM DIGI is the architect. The house belongs to CMS Europe. By 2030, CMS Europe will have its own AI capability and full ownership of the entire ecosystem.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          <span class="faq-q-text">What happens after the first six months?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-a">
+          <p>SOMM DIGI and CMS Europe review the progress together and align on the next phase. All work delivered during the first six months belongs to CMS Europe regardless of any future decisions. There is no lock-in. The partnership continues only if both sides see the value.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 13 NEXT STEP -->
 <div class="sec reveal" id="next">
   <div class="wrap">
     <div class="sec-hd">
-      <div class="sec-hd-top"><span class="sec-num">12</span>
+      <div class="sec-hd-top"><span class="sec-num">13</span>
       <h2 class="sec-title">One Conversation to Begin</h2></div>
       <p class="sec-motto">Three months. Low risk. High value. A foundation for decades.</p>
     </div>
